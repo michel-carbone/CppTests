@@ -2,10 +2,20 @@
 //
 
 #include <iostream>
+#include <cmath>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    float fTime = 0;
+    int loop_count = 60000;
+
+    for (int i = 0; i < loop_count; i++)
+    {
+        fTime += 0.001;
+    }
+    cout << "expected result is "<< loop_count << "/1000\n";
+    cout << "result is : "<< fTime << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
